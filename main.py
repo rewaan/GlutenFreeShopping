@@ -1,14 +1,16 @@
-import kivy
-
 from kivy.app import App
-from kivy.uix.label import Label
+from kivy.uix.stacklayout import StackLayout
 
 
-class MyApp(App):
+class Search(StackLayout):
+    pass
 
+
+class SearchApp(App):
     def build(self):
-        return Label(text='Hello world')
+        self.title = 'GlutenFreeShoppingApp'
+        return Search()
 
 
 if __name__ == '__main__':
-    MyApp().run()
+    SearchApp().run()
